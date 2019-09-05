@@ -1,10 +1,10 @@
-class college:
+class College:
     def __init__(self,name,department):
         self.name = name
         self.department = department
     def print_details(self):
         print(f"{self.name},{self.department}")
-class student(college):
+class Student(college):
     def __init__(self,name,department,roll_no):
         college.__init__(self,name,department)
         self.rollno = roll_no
@@ -14,7 +14,7 @@ class student(college):
 
 p = student("Shalini","Chemistry",3)
 p.print_details()
-class teacher(college):
+class Teacher(college):
     def __init__(self,name,deparment,college_id):
         college.__init__(self,name,department)
         self.college_id = college_id
